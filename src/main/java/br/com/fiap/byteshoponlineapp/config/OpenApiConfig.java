@@ -4,8 +4,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
+import io.swagger.v3.oas.models.servers.Server;
 
 /**
  * Configuração do SpringDoc OpenAPI (Swagger)
@@ -21,9 +21,10 @@ public class OpenApiConfig {
                         .version("1.0.0")
                         .description("API RESTful para gerenciamento de solicitações de suporte técnico. " +
                                 "Permite criar, listar, atualizar e remover solicitações, além de gerenciar " +
-                                "o ciclo de vida dos chamados através de transições de status.")
-                        .contact(new Contact()
-                                .name("FIAP")
-                                .email("suporte@fiap.com.br")));
+                                "o ciclo de vida dos chamados através de transições de status."))
+                .addServersItem(new Server()
+                        .url("http://localhost:8080")
+                        .description("Servidor de Desenvolvimento"));
     }
 }
+
