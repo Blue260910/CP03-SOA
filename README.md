@@ -7,6 +7,9 @@
 > **API RESTful para gerenciamento de solicitações de suporte técnico**  
 > Desenvolvida como parte do Checkpoint 3 - Arquitetura Orientada a Serviço - FIAP
 
+Integrante:
+- Victor Hugo Aranda Forte - RM99667
+
 ---
 
 ## 📑 Índice
